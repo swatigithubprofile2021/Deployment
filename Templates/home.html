@@ -1,20 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>IRIS FLOWER PREDICTION</title>
-</head>
-<body>
+<html>
+    <body>
 <center>
-    <form method="post", action = {{url_for('home')}}>
-        <b>Sepal Length : <input type = 'text',name = 'a',placeholder = "enter1" ><br><br>
-            Sepal Width : <input type = 'text',name = 'b',placeholder = "enter2"><br><br>
-            Petal Length : <input type = 'text',name = 'c',placeholder = "enter3"><br><br>
-            Petal Width : <input type = 'text',name = 'd',placeholder = "enter4"><br><br>
+    <h1>IRIS FLOWER PREDICTION</h1>
 
 
-        </b>
-        <input type = "submit" ,value = 'Predict!'>
+    <form method="POST", action = "{{url_for('home')}}">
+        <b>Sepal Length : <input name = 'a',type = "text", placeholder = "enter1" ><br><br>
+            Sepal Width : <input name = 'b',type = "text",placeholder = "enter2" ><br><br>
+            Petal Length : <input name = 'c',type ='text',placeholder = "enter3" ><br><br>
+            Petal Width : <input name = 'd',type='text',placeholder = "enter4" ><br><br></b>
+            <input type = "submit",value = "predict" >
 
     </form>
 </center>
